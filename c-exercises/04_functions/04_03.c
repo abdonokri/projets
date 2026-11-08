@@ -1,22 +1,20 @@
 # include <stdio.h>
-int get_max(int a, int b){
-    if (a > b){
-        return a;
+int is_positive(int n) {
+    if (n > 0){
+        return 1;
     }else{
-        return b;
+        return 0;
     }
 }
 int main(){
     int a;
-    int b;
     int max;
-    printf("entre first number: ");
+    printf("entre any number: ");
     scanf("%d", &a);
 
-    printf("entre second number: ");
-    scanf("%d", &b);
 
-    max = get_max(a, b);
+
+    max = is_positive(a);
     printf("%d\n", max);
     return 0;
 }
